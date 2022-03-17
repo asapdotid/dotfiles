@@ -1,0 +1,269 @@
+{
+  // Sync Settings
+  "sync.gist": "4534dfgdfgdfg645645yghfvcbvb", # github gist id
+  // Editor Linux
+  "editor.fontFamily": "'Fira Code', 'Powerline'",
+  "editor.fontLigatures": true,
+  "editor.fontSize": 16,
+  "editor.lineHeight": 44,
+  "editor.minimap.enabled": false, // removes minimap
+  "editor.renderWhitespace": "none", // removes whitespace chars
+  "editor.guides.bracketPairs": false,
+  "editor.guides.indentation": false, // removes indent guides
+  "editor.renderLineHighlight": "none", // removes line highlight
+  "editor.overviewRulerBorder": false, // removes border from overview ruler (located on the right, same position as the scrollbar)
+  "editor.hideCursorInOverviewRuler": true, // hides cursor mark in the overview ruler
+  "editor.folding": false, // removes the folding feature
+  "editor.occurrencesHighlight": false, // removes highlights occurrences (still works when you select a word)
+  "editor.matchBrackets": "never", // removes the highlight of matching brackets (I use Subtle Match Brackets extension for this)
+  "editor.glyphMargin": false, // removes the space used mainly for debugging indicators
+  "editor.suggestSelection": "first",
+  "editor.formatOnSave": true,
+  "editor.codeActionsOnSave": {
+    "source.fixAll": true,
+    "source.fixAll.eslint": true
+  },
+  "editor.quickSuggestions": {
+    "other": true,
+    "comments": true
+  },
+  "css.lint.unknownAtRules": "ignore",
+  "css.validate": false,
+  "less.validate": false,
+  "scss.validate": false,
+  // Enable per-language
+  "[javascript,typescript,php]": {
+    "editor.formatOnSave": true
+  }, // removes the activity bar (the 4 icons at the left of the screen), so now you will have to open the explorer, git, debugger and extension with shortcuts or through the Command Palette
+  "workbench.editor.showIcons": false, // removes icon from opened files in tabs
+  "workbench.editor.tabCloseButton": "off", // removes cross icon from tabs
+  "workbench.editor.tabSizing": "shrink",
+  "workbench.editor.labelFormat": "short",
+  "workbench.startupEditor": "none",
+  "workbench.iconTheme": "material-icon-theme",
+  "workbench.statusBar.visible": false,
+  "workbench.editorAssociations": {
+    "*.ipynb": "jupyter.notebook.ipynb"
+  },
+  "workbench.colorCustomizations": {
+    "editor.background": "#222D31",
+    "editorGroupHeader.tabsBackground": "#222D31",
+    "editorWidget.background": "#222D31",
+    "editorSuggestWidget.selectedBackground": "#a09e9e",
+    "list.inactiveSelectionBackground": "#34454b",
+    "list.hoverBackground": "#34454b",
+    "dropdown.background": "#34454b",
+    "input.background": "#34454b",
+    // object that allows you to customize your color theme: https://code.visualstudio.com/docs/getstarted/theme-color-reference
+    "tab.activeBorder": "#2BC1A4", // removes border to highlight active tabs (the colors formats are: #RGB, #RGBA, #RRGGBB or #RRGGBBAA)
+    "tab.activeBackground": "#222D31",
+    "tab.inactiveBackground": "#222D31",
+    "tab.border": "#222D31",
+    "statusBar.background": "#222D31",
+    "statusBar.noFolderBackground": "#222D31",
+    "statusBar.debuggingBackground": "#511f1f",
+    "statusBar.foreground": "#a09e9e",
+    "sideBar.background": "#222D31",
+    "panel.border": "#222D31",
+    "activityBar.background": "#222D31",
+    "titleBar.activeBackground": "#222D31",
+    "scrollbarSlider.background": "#222D31",
+    "scrollbarSlider.activeBackground": "#222D31",
+    "scrollbarSlider.hoverBackground": "#222D31",
+    "focusBorder": "#2BC1A4",
+    "peekView.border": "#2BC1A4",
+    "statusBarItem.remoteBackground": "#2BC1A4",
+    "statusBarItem.remoteForeground": "#ccc"
+  },
+  // Terminal
+  "terminal.integrated.fontFamily": "Fira Code",
+  "terminal.integrated.fontSize": 15,
+  "terminal.integrated.fontWeightBold": "500",
+  "terminal.integrated.cursorBlinking": true,
+  "terminal.integrated.sendKeybindingsToShell": true,
+  "terminal.integrated.cursorStyle": "line",
+  "terminal.integrated.cursorWidth": 3,
+  "terminal.integrated.persistentSessionReviveProcess": "never",
+  // Files
+  "files.eol": "\n",
+  "files.associations": {
+    ".aliases": "shellscript",
+    ".php_cs": "php",
+    ".php_cs.dist": "php",
+    "*.php": "php",
+    ".env.development": "dotenv",
+    ".env.staging": "dotenv",
+    ".env.production": "dotenv",
+    "hosts": "ini",
+    "config": "ini"
+  },
+  "files.autoSave": "off",
+  "files.trimTrailingWhitespace": true,
+  "files.trimFinalNewlines": true,
+  "emmet.includeLanguages": {
+    "blade.php": "html",
+    "vue": "html"
+  },
+  "search.exclude": {
+    "**/.git": true,
+    "**/.svn": true,
+    "**/.hg": true,
+    "**/CVS": true,
+    "**/.DS_Store": true,
+    "**/tmp": true,
+    "**/node_modules": true,
+    "**/bower_components": true,
+    // Hide everything in /public, except "index.php"
+    "**/public/[abcdefghjklmnopqrstuvwxyz]*": true,
+    "**/public/i[abcdefghijklmopqrstuvwxyz]*": true,
+    // Hide everything in /vendor, except "laravel" folder.
+    "**/vendor/[abcdefghijkmnopqrstuvwxyz]*": true,
+    "**/vendor/l[bcdefghijklmnopqrstuvwxyz]*": true,
+    "storage/framework/views": true
+  },
+  // Vetur
+  "vetur.validation.style": false,
+  "vetur.format.defaultFormatter.html": "js-beautify-html",
+  "vetur.format.defaultFormatterOptions": {
+    "js-beautify-html": {
+      "wrap_attributes": "auto"
+    }
+  },
+  // Tailwind CSS
+  "tailwindCSS.includeLanguages": {
+    "plaintext": "html"
+  },
+  "tailwindCSS.emmetCompletions": true,
+  // Prettier
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[vue]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[php]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  // Terraform
+  "[terraform]": {
+    "editor.formatOnSave": true
+  },
+  "terraform-ls.experimentalFeatures": {
+    "validateOnSave": true
+  },
+  // TabNine
+  "tabnine.experimentalAutoImports": true,
+  // Eslint
+  // "eslint.validate": ["javascript", "vue", "html"],
+  // Auto Close trimTrailingWhitespace
+  "auto-close-tag.enableAutoCloseTag": true,
+  "auto-close-tag.enableAutoCloseSelfClosingTag": true,
+  // Better commanets
+  "better-comments.tags": [
+    {
+      "tag": "!",
+      "color": "#FF2D00",
+      "strikethrough": false,
+      "underline": false,
+      "backgroundColor": "transparent",
+      "bold": false,
+      "italic": false
+    },
+    {
+      "tag": "?",
+      "color": "#3498DB",
+      "strikethrough": false,
+      "underline": false,
+      "backgroundColor": "transparent",
+      "bold": false,
+      "italic": false
+    },
+    {
+      "tag": "//",
+      "color": "#474747",
+      "strikethrough": true,
+      "underline": false,
+      "backgroundColor": "transparent",
+      "bold": false,
+      "italic": false
+    },
+    {
+      "tag": "todo",
+      "color": "#FF8C00",
+      "strikethrough": false,
+      "underline": false,
+      "backgroundColor": "transparent",
+      "bold": false,
+      "italic": false
+    },
+    {
+      "tag": "*",
+      "color": "#98C379",
+      "strikethrough": false,
+      "underline": false,
+      "backgroundColor": "transparent",
+      "bold": false,
+      "italic": false
+    }
+  ],
+  // PHP
+  "php.suggest.basic": false,
+  "php.validate.executablePath": "/usr/bin/php",
+  // PHP CS Fixer
+  "php-cs-fixer.executablePath": "php-cs-fixer",
+  "php-cs-fixer.onsave": true,
+  "php-cs-fixer.rules": "@PSR2",
+  "php-cs-fixer.config": ".php-cs-fixer.php;.php-cs-fixer.dist.php;.php_cs;.php_cs.dist",
+  "php-cs-fixer.allowRisky": false,
+  "php-cs-fixer.pathMode": "override",
+  "php-cs-fixer.exclude": [],
+  "php-cs-fixer.autoFixByBracket": true,
+  "php-cs-fixer.autoFixBySemicolon": false,
+  "php-cs-fixer.formatHtml": false,
+  "php-cs-fixer.documentFormattingProvider": true,
+  // Others
+  "explorer.openEditors.visible": 0,
+  "redhat.telemetry.enabled": false,
+  "yaml.customTags": [
+    "!encrypted/pkcs1-oaep scalar",
+    "!vault scalar",
+    "!And",
+    "!And sequence",
+    "!If",
+    "!If sequence",
+    "!Not",
+    "!Not sequence",
+    "!Equals",
+    "!Equals sequence",
+    "!Or",
+    "!Or sequence",
+    "!FindInMap",
+    "!FindInMap sequence",
+    "!Base64",
+    "!Join",
+    "!Join sequence",
+    "!Cidr",
+    "!Ref",
+    "!Sub",
+    "!Sub sequence",
+    "!GetAtt",
+    "!GetAZs",
+    "!ImportValue",
+    "!ImportValue sequence",
+    "!Select",
+    "!Select sequence",
+    "!Split",
+    "!Split sequence"
+  ],
+  "bracket-pair-colorizer-2.showBracketsInGutter": true,
+  "colorize.languages": ["javascript"],
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "json.schemas": []
+}

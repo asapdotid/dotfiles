@@ -1,0 +1,16 @@
+[user]
+	name = Asapdotid
+	email = asapdotid@gmail.com
+[core]
+	editor = nvim
+	whitespace = fix,-indent-with-non-tab,trailing-space,cr-at-eol
+	pager = delta
+[init]
+	defaultBranch = main
+[pull]
+	ff = only
+[color "status"]
+	added = green bold
+	changed = red bold strike
+	untracked = cyan
+	branch = yellow bold ul

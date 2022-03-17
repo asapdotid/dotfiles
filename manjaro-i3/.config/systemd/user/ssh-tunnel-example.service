@@ -1,0 +1,13 @@
+[Unit]
+Description=SSH Tunnel Server on local port 2222
+After=network.target
+
+[Service]
+Environment="AUTOSSH_GATETIME=0"
+ExecStart=/usr/bin/autossh -M 0 -o "ServerAliveInterval 30" -o "ServerAliveCountMax 3" -N -i ~/.ssh/id_rsa ubuntu@13.10.1.3 -L 2222:192.168.0.100:22
+Restart=on-failure
+RestartSec=10
+TimeoutSec=10
+
+[Install]
+WantedBy=default.target
