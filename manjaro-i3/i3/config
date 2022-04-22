@@ -210,7 +210,6 @@ for_window [title="MuseScore: Play Panel"] floating enable
 for_window [class="Nitrogen"] floating enable sticky enable border normal
 for_window [class="Oblogout"] fullscreen enable
 for_window [class="octopi"] floating enable
-for_window [title="About Pale Moon"] floating enable
 for_window [class="Pamac-manager"] floating enable
 for_window [class="Pavucontrol"] floating enable
 for_window [class="qt5ct"] floating enable sticky enable border normal
@@ -221,20 +220,18 @@ for_window [class="Skype"] floating enable border normal
 for_window [class="Timeset-gui"] floating enable border normal
 for_window [class="(?i)virtualbox"] floating enable border normal
 for_window [class="Xfburn"] floating enable
-for_window [class="jetbrains-toolbox"] floating enable
-for_window [class="Slack"] floating enable
-for_window [class="Telegram"] floating enable
+for_window [class="Slack"] floating enable border pixel 1
+for_window [class="Telegram"] floating enable border pixel 1
 for_window [class="Whatsapp"] floating enable border pixel 1
+for_window [class="zoom"] floating enable border pixel 1
 for_window [class="BleachBit"] floating enable border pixel 1
 for_window [class="cpu-x"] floating enable border pixel 1
-for_window [class="transmission"] floating enable
-for_window [class="vlc"] floating enable
-for_window [class="pulseaudio-equalizer-ladspa"] floating enable border pixel 1
+for_window [class="transmission"] floating enable border pixel 1
+for_window [class="vlc"] floating enable border pixel 1
+for_window [class="pulseaudio-.+"] floating enable border pixel 1
 for_window [class="^jetbrains-.+" title="win0"] floating enable
-# for_window [class="^jetbrains-.+"][window_type=dialog] floating enable
-for_window [title="Welcome to PhpStorm"] floating disable
-for_window [class="stacer"] floating enable
-for_window [class="Cheese"] floating enable
+for_window [class="stacer"] floating enable border pixel 1
+for_window [class="Cheese"] floating enable border pixel 1
 
 # browser pop-ups
 for_window [window_role="pop-up"] floating enable move absolute center border normal
@@ -247,7 +244,7 @@ for_window [window_role="Preferences"] floating enable border normal
 for_window [window_type="dialog"] floating enable border normal
 for_window [window_type="menu"] floating enable border normal
 for_window [window_role="Organizer"] floating enable border normal
-for_window [class="Firefox" window_role="About"] floating enable border normal
+for_window [window_role="About"] floating enable border normal
 
 # switch to workspace with urgent window automatically
 for_window [urgent=latest] focus
@@ -320,6 +317,8 @@ exec --no-startup-id start_conky_maia
 exec --no-startup-id xautolock -time 10 -locker blurlock
 exec_always --no-startup-id ff-theme-util
 exec_always --no-startup-id fix_xcursor
+# exec_always --no-startup-id sh -c "pkill fusuma; fusuma -d"
+exec --no-startup-id sh -c "pkill fusuma; fusuma -d"
 
 # Color palette used for the terminal ( ~/.Xresources file )
 # Colors are gathered based on the documentation:
@@ -327,7 +326,7 @@ exec_always --no-startup-id fix_xcursor
 # Change the variable name at the place you want to match the color
 # of your terminal like this:
 # [example]
-# If you want your bar to have the same background color as your 
+# If you want your bar to have the same background color as your
 # terminal background change the line 362 from:
 # background #14191D
 # to:
@@ -391,7 +390,7 @@ bindsym $mod+m bar mode toggle
   client.focused_inactive #2F3D44 #2F3D44 #1ABC9C #454948
   client.unfocused        #2F3D44 #2F3D44 #1ABC9C #454948
   client.urgent           #CB4B16 #FDF6E3 #1ABC9C #268BD2
-  client.placeholder      #000000 #0c0c0c #ffffff #000000 
+  client.placeholder      #000000 #0c0c0c #ffffff #000000
 
   client.background       #2B2C2B
 
@@ -411,7 +410,7 @@ gaps outer -2
 # Smart gaps (gaps used if only more than one container on the workspace)
 smart_gaps on
 
-# Smart borders (draw borders around container only if it is not the only container on this workspace) 
+# Smart borders (draw borders around container only if it is not the only container on this workspace)
 # on|no_gaps (on=always activate and no_gaps=only activate if the gap size to the edge of the screen is 0)
 smart_borders on
 
