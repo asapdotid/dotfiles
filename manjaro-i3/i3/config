@@ -226,7 +226,7 @@ for_window [class="Whatsapp"] floating enable border pixel 1
 for_window [class="zoom"] floating enable border pixel 1
 for_window [class="BleachBit"] floating enable border pixel 1
 for_window [class="cpu-x"] floating enable border pixel 1
-for_window [class="transmission"] floating enable border pixel 1
+for_window [class="Transmission"] floating enable border pixel 1
 for_window [class="vlc"] floating enable border pixel 1
 for_window [class="pulseaudio-.+"] floating enable border pixel 1
 for_window [class="^jetbrains-.+" title="win0"] floating enable
